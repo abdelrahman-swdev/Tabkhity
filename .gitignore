@@ -361,3 +361,13 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+bin
+obj
+Tabkhity/appsettings.json
+Tabkhity/wwwroot/lib
+.vs
+.vscode
+Tabkhity/.config
+Tabkhity/Properties/PublishProfiles
+Tabkhity/wwwroot
