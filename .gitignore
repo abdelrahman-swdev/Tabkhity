@@ -364,10 +364,8 @@ FodyWeavers.xsd
 
 bin
 obj
-Tabkhity/appsettings.json
-Tabkhity/wwwroot/lib
+Tabkhity/Tabkhity/appsettings.json
 .vs
 .vscode
-Tabkhity/.config
-Tabkhity/Properties/PublishProfiles
-Tabkhity/wwwroot
+Tabkhity/Tabkhity/.config
+Tabkhity/Tabkhity/Properties/PublishProfiles
