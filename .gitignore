@@ -359,7 +359,7 @@ FodyWeavers.xsd
 
 bin
 obj
-/Tabkhity/appsettings.json
+Tabkhity/appsettings.json
 .vs
 .vscode
 Tabkhity/.config
