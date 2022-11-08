@@ -359,8 +359,8 @@ FodyWeavers.xsd
 
 bin
 obj
-./Tabkhity/appsettings.json
+/Tabkhity/appsettings.json
 .vs
 .vscode
-./Tabkhity/.config
-./Tabkhity/Properties/PublishProfiles
+Tabkhity/.config
+Tabkhity/Properties/PublishProfiles
