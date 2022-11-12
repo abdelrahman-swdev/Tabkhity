@@ -6,6 +6,7 @@ using Tabkhity.Core.Identity;
 using Tabkhity.Errors;
 using Tabkhity.Extensions;
 using Tabkhity.Infrastructure.Data;
+using Tabkhity.Services.Mapping;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +44,7 @@ builder.Services.AddIdentityServices(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerSettings();
+builder.Services.ConfigAutoMapper();
 
 var app = builder.Build();
 

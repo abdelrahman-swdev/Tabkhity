@@ -14,5 +14,6 @@ namespace Tabkhity.Core.Interfaces
         Task<T> FindByIdAsync(string id);
         IQueryable<T> FindBy(Expression<Func<T, bool>> criteria);
         Task<T> FindOneByAsync(Expression<Func<T, bool>> criteria);
+        Task<int> CountAsync(Expression<Func<T, bool>> criteria);
     }
 }

@@ -20,7 +20,7 @@ namespace Tabkhity.Infrastructure.Data.Repositories
 
         public async Task<List<T>> ListAllAsync()
         {
-            return await _entitySet.ToListAsync();
+            return await _entitySet.AsNoTracking().ToListAsync();
         }
 
         public async Task<T> AddAsync(T entity)
@@ -79,6 +79,12 @@ namespace Tabkhity.Infrastructure.Data.Repositories
         {
             var items = _entitySet.AsNoTracking().AsQueryable();
             return await items.Where(criteria).FirstOrDefaultAsync();
+        }
+
+        public Task<int> CountAsync(Expression<Func<T, bool>> criteria)
+        {
+            var items = _entitySet.AsNoTracking().AsQueryable();
+            return items.Where(criteria).CountAsync();
         }
     }
 }
